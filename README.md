@@ -35,6 +35,52 @@ const writeToFile = require("write-to-file");
 
 If `foo/bar` directory does not exist, it will be created automatically.
 
+## Recipe
+
+### Set the Character Encoding
+
+You can pass the character encoding as the third argument. Default to `utf8`.
+
+```js
+const writeToFile = require("write-to-file");
+
+(async () => {
+  const buff = Buffer.from("Hello World!");
+
+  try {
+    await writeToFile("foo.txt", buff.toString("hex"), "hex");
+  } catch(error) {
+    console.error(error.message);
+  }
+})();
+```
+
+You can also pass an object:
+
+```js
+writeToFile("foo.txt", buff.toString("hex"), {
+  encoding: "hex"
+});
+```
+
+### Appending Data to a File
+
+By default, if the file already exists, it will be overwritten. For appending data to a file, you may pass the `flag` option:
+
+```js
+const writeToFile = require("write-to-file");
+
+(async () => {
+  try {
+    await writeToFile("foo.txt", "bar", {
+      flag: "a"
+    });
+  } catch(error) {
+    console.error(error.message);
+  }
+})();
+```
+
 ## API
 
 ```js
