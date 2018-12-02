@@ -6,7 +6,7 @@
 [![Latest Stable Version](https://flat.badgen.net/npm/v/write-to-file)](https://www.npmjs.com/package/write-to-file)
 [![Node Version](https://flat.badgen.net/npm/node/write-to-file)](https://www.npmjs.com/package/write-to-file)
 [![Code Style: Prettier](https://flat.badgen.net/badge/code%20style/prettier/ff69b4)](https://github.com/prettier/prettier)
-[![License](https://flat.badgen.net/npm/license/write-to-file)](https://github.com/risan/send-request/blob/master/LICENSE)
+[![License](https://flat.badgen.net/npm/license/write-to-file)](https://github.com/risan/write-to-file/blob/master/LICENSE)
 
 Writes data to file and automatically create its directories if not exists.
 
