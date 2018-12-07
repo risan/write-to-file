@@ -1,7 +1,7 @@
 {
   "name": "write-to-file",
-  "version": "1.0.1",
-  "description": "Writes data to file and automatically create its directories if not exists",
+  "version": "1.0.2",
+  "description": "Writes data to file and automatically create its directories if not exists.",
   "keywords": [
     "fs",
     "mkdirp",
